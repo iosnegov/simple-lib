@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=77.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "simple-lib"
+version = "0.1.0"
+description = "Simple Geographic Recomendation System Library"
+readme = "README.md"
+license = "BSD-3-Clause"
+license-files = ["LICENSE"]
+
+authors = [
+    { name = "Sierra Arn" }
+]
+requires-python = ">=3.13"
+
+dependencies = [
+    "pandas>=2.3.3,<3",
+    "numpy>=2.3.3,<3",
+    "scikit-learn>=1.7.2,<2",
+    "huggingface_hub>=0.35.3,<0.36",
+    "joblib>=1.5.2,<2",
+    "pydantic>=2.11.9,<3"
+]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
