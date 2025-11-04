@@ -1,0 +1,37 @@
+[workspace]
+authors = ["Sierra Arn"]
+channels = ["conda-forge"]
+name = "simple-lib"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = ">=3.13.7,<3.14"
+pandas = ">=2.3.3,<3"
+numpy = ">=2.3.3,<3"
+scikit-learn = ">=1.7.2,<2"
+huggingface_hub = ">=0.35.3,<0.36"
+joblib = ">=1.5.2,<2"
+pydantic = ">=2.11.9,<3"
+
+[feature.build.pypi-dependencies]
+build = "*"
+
+[feature.test.dependencies]
+python = ">=3.13.7,<3.14"
+pip = ">=25.2,<26"
+jupyter = ">=1.1.1,<2"
+pytest-cov = "*"
+
+[environments]
+build-env = ["build"]
+test-env = { features = ["test"], no-default-feature = true }
+
+[feature.build.tasks]
+build-lib = "python -m build"
+
+[feature.test.tasks]
+install-lib = "python -m pip install --force-reinstall dist/simple_lib-*.whl"
+test-lib = "pytest tests/test_lib.py --cov=simple_lib --cov-report=term-missing -W ignore::DeprecationWarning"
