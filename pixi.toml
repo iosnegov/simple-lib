@@ -1,9 +1,13 @@
 [workspace]
-authors = ["Sierra Arn"]
-channels = ["conda-forge"]
+authors = ["Ilya Snegov <unweariedheart@gmail.com>"]
 name = "simple-lib"
-platforms = ["linux-64"]
 version = "0.1.0"
+license = "MIT-0"
+repository = "https://github.com/snegoviol/simple-lib"
+
+channels = ["https://prefix.dev/conda-forge"]
+platforms = ["linux-64"]
+requires-pixi = ">=0.82.0"
 
 [tasks]
 
