@@ -7,6 +7,7 @@
 # Python
 __pycache__/
 *.egg-info/
+dist/
 
 # Pytest-cov
 .coverage
