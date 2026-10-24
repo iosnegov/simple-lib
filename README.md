@@ -2,6 +2,17 @@
 
 *A simple library for building geographic recommendation systems.*
 
+> [!WARNING]  
+> **Project Archived**
+> 
+> This project is no longer actively maintained. 
+> 
+> **Context:**  
+> Originally, this repository began as a modular component of a large-scale university assignment. Rather than simply completing the task and discarding the code, I chose to expand it into a structured mini-project to explore geographic data processing and machine learning concepts. That said, it was purely a personal experiment and was never intended to be a production-ready or educational tool.
+> 
+> **Reason for Archiving:**  
+> Consequently, I no longer have an interest in further maintaining this codebase. This repository is now archived purely as a historical artifact, serving as a snapshot of my early learning journey and a reminder of where I started in software development.
+
 ## Brief Overview
 
 This project is developed for educational purposes and demonstrates how to combine geographic data processing with machine learning. 
